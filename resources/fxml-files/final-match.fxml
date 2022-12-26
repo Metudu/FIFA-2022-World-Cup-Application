@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="512.0" prefWidth="768.0" stylesheets="@../css-files/final-match.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.GraphicalMatchController">
+   <children>
+      <Circle fx:id="ball" layoutX="384.0" layoutY="256.0" radius="5.0" stroke="BLACK" strokeType="INSIDE">
+         <fill>
+            <RadialGradient centerX="0.5166666666666666" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </fill>
+      </Circle>
+      <Label fx:id="finalist1" layoutX="14.0" layoutY="14.0" prefHeight="25.0" prefWidth="306.0" text="Label" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="finalist2" alignment="CENTER_RIGHT" layoutX="448.0" layoutY="14.0" prefHeight="25.0" prefWidth="306.0" text="Label" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="score1_label" alignment="CENTER" layoutX="332.0" layoutY="14.0" prefHeight="25.0" prefWidth="30.0" text="0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="score2_label" alignment="CENTER" layoutX="409.0" layoutY="14.0" prefHeight="25.0" prefWidth="30.0" text="0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Circle fx:id="player" fill="DODGERBLUE" layoutX="384.0" layoutY="498.0" radius="9.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
+      <Label fx:id="current_time" alignment="CENTER_RIGHT" layoutX="630.0" layoutY="473.0" prefHeight="25.0" prefWidth="110.0" text="Minute: 0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="match_situation" alignment="CENTER" layoutX="26.0" layoutY="473.0" prefHeight="25.0" prefWidth="306.0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

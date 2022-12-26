@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="512.0" prefWidth="768.0" stylesheets="@../css-files/main-menu-style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.MainMenuController">
+   <children>
+      <Button fx:id="start" layoutX="235.0" layoutY="385.0" mnemonicParsing="false" onAction="#start_the_world_cup" prefHeight="85.0" prefWidth="300.0" text="START THE WORLD CUP">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Label layoutX="193.0" layoutY="29.0" text="FIFA 2022 WORLD CUP" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="197.0" layoutY="89.0" text="Select your favourite team">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="favourite_box" layoutX="288.0" layoutY="148.0" prefHeight="36.0" prefWidth="180.0" style="-fx-background-radius: 15px;" />
+      <ImageView fx:id="imageview" fitHeight="130.0" fitWidth="200.0" layoutX="284.0" layoutY="209.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>
